@@ -16,10 +16,6 @@ image_hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 lighter_lower = np.array([0, 60, 50])
 lighter_upper = np.array([55, 90, 255])
 lighter_mask = cv2.inRange(image_hsv, lighter_lower, lighter_upper)
-# Set range for white colour and define mask
-white_lower = np.array([0, 0, 0], np.uint8)
-white_upper = np.array([0, 0, 255], np.uint8)
-white_mask = cv2.inRange(image_hsv, white_lower, white_upper)
 
 # Morphological Transform, Dilation
 # for each color and bitwise_and operator
