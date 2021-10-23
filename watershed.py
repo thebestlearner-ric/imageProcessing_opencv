@@ -6,7 +6,6 @@ import numpy as np
 import argparse
 import imutils
 import cv2
-# Minimum percentage of pixels of same hue to consider dominant colour
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
